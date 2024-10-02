@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Rekursif",
+      "request": "launch",
+      "mainClass": "Java.Rekursif",
+      "projectName": "Belajarlah_114ab4b3"
+    },
+    {
+      "type": "java",
+      "name": "QuickSortVisual",
+      "request": "launch",
+      "mainClass": "Java.QuickSortVisual",
+      "projectName": "Belajarlah_114ab4b3"
+    },
+    {
+      "type": "java",
+      "name": "BubbleSortVisual",
+      "request": "launch",
+      "mainClass": "Java.BubbleSortVisual",
+      "projectName": "Belajarlah_114ab4b3"
+    },
+    {
+      "type": "java",
       "name": "InsertionSortVisual",
       "request": "launch",
       "mainClass": "Java.InsertionSortVisual",

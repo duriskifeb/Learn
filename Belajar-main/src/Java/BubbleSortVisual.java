@@ -8,6 +8,7 @@ import java.util.Random;
 
 public class BubbleSortVisual extends JPanel implements ActionListener {
 
+    // inisiasi variable
     private int[] array;
     private int comparisons = 0;
     private int swaps = 0;
@@ -20,17 +21,19 @@ public class BubbleSortVisual extends JPanel implements ActionListener {
         array = new int[size];
         Random random = new Random();
         for (int i = 0; i < size; i++) {
-            array[i] = random.nextInt(100); // Nilai acak dari 0 hingga 99
+            array[i] = random.nextInt(1000); // Nilai acak dari 0 hingga 99
         }
         timer = new Timer(100, this); // Timer dengan interval 100ms
-        timer.start(); // Memulai timer
+        timer.start(); // Memulai program
     }
 
-    @Override
-    public void paintComponent(Graphics g) {
+
+    @Override // ini menggunakan ovveridde
+    public void paintComponent(Graphics g) { // ini untuk penggambaran
         super.paintComponent(g);
         int width = getWidth() / array.length;
         for (int i = 0; i < array.length; i++) {
+            // pengontrolan dalam graphics sini
             g.setColor(Color.BLACK);
             g.fillRect(i * width, getHeight() - array[i], width, array[i]);
             g.setColor(Color.WHITE);
