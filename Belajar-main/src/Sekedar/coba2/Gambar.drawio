@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="z397sFdw8_MUM7MBU-OK" name="Page-1">
+        <mxGraphModel dx="840" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="27" value="" style="shape=or;whiteSpace=wrap;html=1;shadow=1;strokeColor=#FF0000;strokeWidth=3;fontFamily=Helvetica;fontSize=13;fillColor=#FF8000;gradientColor=none;rotation=-179;" vertex="1" parent="1">
+                    <mxGeometry x="530.17" y="270.18" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;fillColor=#FF8000;strokeColor=#FF0000;strokeWidth=3;gradientColor=none;rotation=50;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="150" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;fillColor=#FF8000;strokeColor=#FF0000;strokeWidth=3;gradientColor=none;rotation=30;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;fillColor=#FF8000;strokeColor=#FF0000;strokeWidth=3;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="930" y="130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;h1&gt;Tubes Alpro Kelompok 4&lt;/h1&gt;&lt;h2 style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&amp;nbsp;Anngota :&amp;nbsp;&lt;/span&gt;&lt;/h2&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;h3&gt;&lt;ul&gt;&lt;li&gt;Rizky f.&lt;/li&gt;&lt;li style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;Nanda&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;Frist A.&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;Terfel&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h3&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;horizontal=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;gradientColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="230" width="400" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;h1&gt;Konser&lt;/h1&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=13;strokeWidth=3;strokeColor=#FF0000;gradientColor=none;fillColor=#FF8000;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="130" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h1&gt;Konser&lt;/h1&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=13;strokeWidth=3;strokeColor=#FF0000;gradientColor=none;fillColor=#FF8000;" vertex="1" parent="1">
+                    <mxGeometry x="930" y="180" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;fillColor=#FF8000;strokeColor=#FF0000;strokeWidth=3;gradientColor=none;rotation=75;" vertex="1" parent="1">
+                    <mxGeometry x="525.17" y="110" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;fillColor=#FF8000;strokeColor=#FF0000;strokeWidth=3;gradientColor=none;rotation=32;" vertex="1" parent="1">
+                    <mxGeometry x="510.17" y="130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;fillColor=#FF8000;strokeColor=#FF0000;strokeWidth=3;gradientColor=none;rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="607.5" y="137.5" width="90" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;h1&gt;Diskon&lt;/h1&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=13;strokeWidth=3;strokeColor=#FF0000;gradientColor=none;fillColor=#FF8000;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="120" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;h1&gt;Murah&lt;/h1&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=13;strokeWidth=3;strokeColor=#FF0000;gradientColor=none;fillColor=#FF8000;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="495.17" y="170" width="110" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,9 @@
+fiersabesari_2012_1,2012,fiersa besari,media kita,jejak langkah
+purcell_2009_1,2009,purcell,wiley,calculus
+faqihza_2019_1,2019,faqihza,gramedia,belajar C++
+faqihza_2019_2,2019,faqihza,gramedia,belajar python
+faqihza_2019_3,2019,faqihza,gramedia,belajar Java
+ucup_2020_1,2020,Ucup Surucup,kompas,Cara sukses mencari belut di sawahriski_2014_1,2014,riski,Gramedia,Gusdur Sang Guru bangsa
+riski_1221_1,1221,riski,mojokdotco,apalah arti hidup
+ahmadfahri_2023_1,2023,ahmad fahri ,gramedia,dikala senja memanggil
+RizkyFebriyanto_2021_1,2021,Rizky Febriyanto,gramedia pasuruan,Kenapa aku harus semangat
