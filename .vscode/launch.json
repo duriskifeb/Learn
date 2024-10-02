@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InsertionSortVisual",
+      "request": "launch",
+      "mainClass": "Java.InsertionSortVisual",
+      "projectName": "Belajarlah_114ab4b3"
+    },
+    {
+      "type": "java",
       "name": "BubbleSort",
       "request": "launch",
       "mainClass": "Java.BubbleSort",
