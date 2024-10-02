@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BubbleSort",
+      "request": "launch",
+      "mainClass": "Java.BubbleSort",
+      "projectName": "Belajarlah_114ab4b3"
+    },
+    {
+      "type": "java",
       "name": "shorting",
       "request": "launch",
       "mainClass": "Java.shorting",
