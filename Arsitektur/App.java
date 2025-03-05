@@ -10,6 +10,5 @@ public class App {
         PersonView view = new PersonView();
         new PersonController(view);
         view.setVisible(true);
-
     }
 }

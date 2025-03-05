@@ -6,67 +6,64 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 public class PersonController {
+    // memanggil clas view
     private PersonView view;
 
     public PersonController(PersonView view) {
         this.view = view;
 
-        //add Event Listener
-        this.view.addSaveListener(new saveListener());
-        this.view.addDeleteListener(new deleteListener());
-        this.view.addUpdateListener(new updateListener());
+        // add Event Listener
+        this.view.addSaveListener(new SaveListener());
+        this.view.addDeleteListener(new DeleteListener());
+        this.view.addUpdateListener(new UpdateListener());
 
     }
 
-    // Listener untuk tombol Save
+    // buat button save Listener
     class SaveListener implements ActionListener {
-        
         public void actionPerformed(ActionEvent event) {
-            String firstName = view.getFirstName();
+            String firtsName = view.getFirstName();
             String lastName = view.getLastName();
             String idNumber = view.getIdNumber();
 
-            if (firstName.isEmpty() || lastName.isEmpty() || idNumber.isEmpty()) {
-                JOptionPane.showMessageDialog(view, "Harap diisi semua field!", "Peringatan",
-                        JOptionPane.WARNING_MESSAGE);
+            if (firtsName.isEmpty() || lastName.isEmpty() || idNumber.isEmpty()) {
+                JOptionPane.showMessageDialog(view, "Data Harus Diisi Semua!");
+                return;
             } else {
-                JOptionPane.showMessageDialog(view, "Data berhasil disimpan!", "Sukses",
-                        JOptionPane.INFORMATION_MESSAGE);
-            }
+                view.addPersonTable(lastName, lastName, idNumber);
+                view.setFirstName("");
+                view.setLastName("");
+                view.setIdNumber("");
 
+            }
+        }
+    }
+
+    // buat button delete
+    class DeleteListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            int selectRow = view.getSelectRow();
+            if (selectRow == -1) {
+                JOptionPane.showMessageDialog(view, "Tolong pilih dulu table mana :)");
+                return;
+            }
+            view.removeSelectedRow(selectRow);
+        }
+    }
+
+    // buat button update
+    class UpdateListener implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            int selectRow = view.getSelectRow();
+            if (selectRow == -1) {
+                JOptionPane.showMessageDialog(view, "Tolong pilih table untuk  di update");
+                return;
+            }
+            String firstName = view.getFirstName();
+            String lastName = view.getLastName();
+            String idNumber = view.getLastName();
+            view.removeSelectedRow(selectRow);
             view.addPersonTable(firstName, lastName, idNumber);
-
-            view.setFirstName("");
-            view.setLastName("");
-            view.setIdNumber("");
-
-            class UpdateListener implements ActionListener {
-                public void actionPerformed(ActionEvent event) {
-                    int selectRow = view.getSelectRow();
-
-                    if (selectRow == -1) {
-                        JOptionPane.showMessageDialog(view, "pilih dulu yaa");
-                        return;
-                    }
-
-                    String firstName = 
-                    String lastName = 
-                    String idNumber = 
-                }
-            }
-
-            class deleteListener implements ActionListener {
-                public void actionPerformed(ActionEvent event) {
-                    int selectRow = view.getSelectRow();
-
-                    if (selectRow == -1) {
-                        JOptionPane.showMessageDialog(view, "Please select Line");
-                        return;
-                    }
-
-                    view.(selectRow);
-                }
-            }
         }
     }
 }

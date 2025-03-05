@@ -34,6 +34,4 @@ public class Person {
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
     }
-
-    
 }

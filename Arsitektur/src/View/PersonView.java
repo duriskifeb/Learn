@@ -10,60 +10,82 @@ public class PersonView extends JFrame {
     private JTextField textFirstName = new JTextField(15);
     private JTextField textLastName = new JTextField(15);
     private JTextField textidNumber = new JTextField(15);
-    private JButton btnSave = new JButton("save");
-    private JButton btnDelete = new JButton("delete");
+    private JButton btnSave = new JButton("Save");
+    private JButton btnDelete = new JButton("Delete");
     private JButton btnUpdate = new JButton("Update");
     private DefaultTableModel tableModel;
     private JTable table;
 
     public PersonView() {
-        setTitle("java GUI MVC");
+        setTitle("Java GUI MVC");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600, 800);
+        setSize(600, 400);
         setLocationRelativeTo(null);
-        setLayout(new BorderLayout());
+        setLayout(new BorderLayout(10, 10));
+        getContentPane().setBackground(new Color(240, 240, 240));
 
-        // awal panel input
-        JPanel panelInput = new JPanel(new GridLayout(4, 2, 5, 5));
-        panelInput.add(new JLabel("First Name"));
+        // Panel Input
+        JPanel panelInput = new JPanel(new GridBagLayout());
+        panelInput.setBorder(BorderFactory.createTitledBorder("Person Information"));
+        panelInput.setBackground(Color.WHITE);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(5, 5, 5, 5);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        panelInput.add(new JLabel("Last Name"));
-        panelInput.add(textLastName);
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        panelInput.add(new JLabel("First Name:"), gbc);
+        gbc.gridx = 1;
+        panelInput.add(textFirstName, gbc);
 
-        panelInput.add(new JLabel("NIM"));
-        panelInput.add(textidNumber);
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        panelInput.add(new JLabel("Last Name:"), gbc);
+        gbc.gridx = 1;
+        panelInput.add(textLastName, gbc);
 
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        panelInput.add(new JLabel("NIM:"), gbc);
+        gbc.gridx = 1;
+        panelInput.add(textidNumber, gbc);
+
+        // Panel Tombol
         JPanel panelButton = new JPanel();
+        panelButton.setBackground(Color.WHITE);
+        btnSave.setBackground(new Color(34, 177, 76));
+        btnSave.setForeground(Color.WHITE);
+        btnDelete.setBackground(new Color(237, 28, 36));
+        btnDelete.setForeground(Color.WHITE);
+        btnUpdate.setBackground(new Color(0, 162, 232));
+        btnUpdate.setForeground(Color.WHITE);
+
         panelButton.add(btnSave);
         panelButton.add(btnDelete);
         panelButton.add(btnUpdate);
-        // akhir panel input
 
-        // awal pembuatan table
+        // Tabel
         String[] columnNames = { "First Name", "Last Name", "NIM" };
         tableModel = new DefaultTableModel(columnNames, 0);
-        JTable table = new JTable(tableModel);
-        JScrollPane scrollPane = new JScrollPane(table); // ini di masnya gada
-        // akhir pembuatan table
+        table = new JTable(tableModel);
+        JScrollPane scrollPane = new JScrollPane(table);
 
-        // add Component Table
+        // Tambahkan Komponen
         add(panelInput, BorderLayout.NORTH);
-        add(panelButton, BorderLayout.SOUTH);
         add(scrollPane, BorderLayout.CENTER);
+        add(panelButton, BorderLayout.SOUTH);
     }
 
-    // awalan getter settter button
     public String getFirstName() {
         return textFirstName.getText();
     }
 
     public String getLastName() {
         return textLastName.getText();
-
     }
 
     public String getIdNumber() {
-        return textFirstName.getText();
+        return textidNumber.getText();
     }
 
     public void setFirstName(String firstName) {
@@ -99,6 +121,7 @@ public class PersonView extends JFrame {
     }
 
     public int removeSelectedRow(int index) {
-        return table.getSelectedRow();
+        tableModel.removeRow(index);
+        return index;
     }
 }
