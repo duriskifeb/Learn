@@ -26,14 +26,16 @@ public class PersonView extends JFrame {
 
         // Panel Input
         JPanel panelInput = new JPanel(new GridBagLayout());
-        panelInput.setBorder(BorderFactory.createTitledBorder("Person Information"));
         panelInput.setBackground(Color.WHITE);
+
+        // menggunakan grid agar tata letak yang bagus hehe
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(5, 5, 5, 5);
+        gbc.insets = new Insets(2, 2, 2, 2); // Mengurangi jarak antar komponen
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
         gbc.gridx = 0;
         gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.WEST; // Geser ke kiri
         panelInput.add(new JLabel("First Name:"), gbc);
         gbc.gridx = 1;
         panelInput.add(textFirstName, gbc);
@@ -68,6 +70,7 @@ public class PersonView extends JFrame {
         String[] columnNames = { "First Name", "Last Name", "NIM" };
         tableModel = new DefaultTableModel(columnNames, 0);
         table = new JTable(tableModel);
+        table.setDefaultEditor(Object.class, null); // Nonaktifkan edit langsung
         JScrollPane scrollPane = new JScrollPane(table);
 
         // Tambahkan Komponen

@@ -30,7 +30,7 @@ public class PersonController {
                 JOptionPane.showMessageDialog(view, "Data Harus Diisi Semua!");
                 return;
             } else {
-                view.addPersonTable(lastName, lastName, idNumber);
+                view.addPersonTable(firtsName, lastName, idNumber);
                 view.setFirstName("");
                 view.setLastName("");
                 view.setIdNumber("");
@@ -56,7 +56,7 @@ public class PersonController {
         public void actionPerformed(ActionEvent event) {
             int selectRow = view.getSelectRow();
             if (selectRow == -1) {
-                JOptionPane.showMessageDialog(view, "Tolong pilih table untuk  di update");
+                JOptionPane.showMessageDialog(view, "Tolong pilih table untuk  di update :)");
                 return;
             }
             String firstName = view.getFirstName();
