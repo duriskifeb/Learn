@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "com.Main",
+      "projectName": "example"
+    },
+    {
+      "type": "java",
       "name": "App",
       "request": "launch",
       "mainClass": "Arsitektur.App",
