@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "Payment_Gatway.Main",
+      "projectName": "Belajarlah_114ab4b3"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "com.Main",
       "projectName": "example"
     },

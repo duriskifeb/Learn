@@ -34,3 +34,4 @@ public class Main {
         scanner.close();
     }
 }
+//sek eror mas
