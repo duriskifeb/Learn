@@ -15,6 +15,6 @@ public class PaymentProcces {
     public void processTrancaction(String id, double ammount, Payment paymentMethod){
         Transaction transaction = new Transaction(id, ammount, paymentMethod);
         transaction.processPayemnt();
-        transactionHistory.addTransaction(transaction);
+        transactionHistory.addTransactionHistory(transaction);
     } 
 }   

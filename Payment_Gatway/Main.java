@@ -25,7 +25,7 @@ public class Main {
         // menampilkan riwayat transaksi setelah pembayaran di lakukan
         history.showTransaction();
         // menyampaikan fitur interaktif untuk melihat riwayat transaksi
-        System.out.println("\n Ingin melihat riwayat transaksi lagi? (y/n)");
+        System.out.println("\nIngin melihat riwayat transaksi lagi? (y/n)");
         String input = scanner.nextLine();
         if (input.equalsIgnoreCase("y")) {
             history.showTransaction();
